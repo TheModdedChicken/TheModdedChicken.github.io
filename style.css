@@ -103,5 +103,17 @@ html { font-family: 'Inter', sans-serif; }
 }
 
 header {
-    display: block;
+    background-color: #222222;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+body {
+    background-color: #111111;
+}
+
+h2 {
+    font-weight: 100;
 }
