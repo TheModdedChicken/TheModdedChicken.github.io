@@ -127,3 +127,12 @@ select {
     font-weight: 600;
     color: white;
 }
+
+.bagelImage {
+    max-width: 500px;
+    max-height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
