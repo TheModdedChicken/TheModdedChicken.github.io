@@ -15,7 +15,11 @@
 
     <body>
         <header id="bagelHeader">
-            <h2 style="size:5px">Bagel</h2>
+            <select name="pageSelect" id="pageSelect" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"">
+                <option value="https://themoddedchicken.thedev.id/bagel">Bagel</option>
+                <option value="https://themoddedchicken.thedev.id/">Home</option>
+                <option value="https://themoddedchicken.thedev.id/content">Content</option>
+            </select>
         </header>
     </body>
 </html>

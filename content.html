@@ -15,7 +15,11 @@
 
     <body>
         <header>
-            <h2 id="homeTopBar">Content</h2>
+            <select name="pageSelect" id="pageSelect" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"">
+                <option value="https://themoddedchicken.thedev.id/content">Content</option>
+                <option value="https://themoddedchicken.thedev.id/">Home</option>
+                <option value="https://themoddedchicken.thedev.id/bagel">Bagel</option>
+            </select>
         </header>
         <h2>Test</h2>
     </body>
