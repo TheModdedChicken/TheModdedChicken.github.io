@@ -95,25 +95,35 @@ input, select {
 
 /* My Custom Styling */
 
-
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
-@supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 header {
     background-color: #222222;
-    padding: 10px;
+    padding: 15px;
+    font-family: 'Inter', sans-serif;
     text-align: center;
-    font-size: 35px;
+    font-size: 150%;
+    font-weight: 100;
     color: white;
 }
 
 body {
     background-color: #111111;
+    color: #cccccc;
 }
 
-h2 {
-    font-weight: 100;
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: 'Inter', sans-serif;
+    appearance: none;       /* Remove default arrow */
+    background-image: url(...);   /* Add custom arrow */
+    background-color: #222222;
+    border: 0px;
+    height: 28px;
+    width: 100px;
+    text-align: center;
+    font-size: 100%;
+    font-weight: 600;
+    color: white;
 }
