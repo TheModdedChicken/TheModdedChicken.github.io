@@ -13,12 +13,14 @@
         <link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/TheModdedChicken/TheModdedChicken.github.io/main/favicon.ico" />
     </head>
 
-    <body>
+    <body">
+        <script src="index.js"></script>
         <header>
 
         </header>
-        <canvas class="profile-space"></canvas>
+        <canvas class="profile-space" onload="loadLine();"></canvas>
         <img class="profile-panel-image" src="TheModdedChicken.png" alt="TheModdedChicken">
         <h2 class="profile-panel-text">TheModdedChicken</h1>
+            <h3 id="homeArrow1" onmouseover="arrowHoverEvent('homeArrow1'); loadLine();" onmouseout="arrowHoverOffEvent('homeArrow1');">test</h3>
     </body>
 </html>
