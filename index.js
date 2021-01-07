@@ -13,7 +13,7 @@ function arrowHoverOffEvent(name) {
         if (curPos == 260) {
             clearInterval(id);
         } else if (hover == true) {
-
+            return;
         } else {
             curPos--;
             arrow.style.left = curPos + 'px';
@@ -40,4 +40,16 @@ function arrowHoverEvent(name) {
             arrow.style.left = curPos + 'px';
         }
     }
+}
+
+function changePage(name) {
+    elem = document.getElementById(name);
+
+    if (name == 'IFELSE-home-text') {
+        
+    }
+}
+
+function hideAllInfoElements() {
+
 }

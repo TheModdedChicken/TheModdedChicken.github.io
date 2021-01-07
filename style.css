@@ -251,6 +251,7 @@ h2, p {
 .IFELSE-home-text {
     font-family: 'Inter';
     position: absolute;
+    cursor: pointer;
     top: 286px;
     left: 260px;
     font-weight: 400;
@@ -268,8 +269,158 @@ h2, p {
 
 .IFELSE-spacer-div {
     position: absolute;
+    cursor: pointer;
     top: 286px;
     left: 260px;
     width: 15px;
     height: 20px;
+}
+
+/* Selected Home Info Box */
+
+.info-space {
+    position: absolute;
+    top: 145px;
+    left: 650px;
+    width: 1100px;
+    height: 700px;
+    background: #222222;
+    border-radius: 14px;
+}
+
+/* IfElse Home Section */
+
+.IFELSE-panel-image {
+    border: none;
+    display: inline-block;
+    border-radius: 14px;
+    position: absolute;
+    outline: none;
+    width: 630px;
+    height: 216px;
+    top: 175px;
+    left: 685px;
+}
+
+.IFELSE-team-space {
+    position: absolute;
+    top: 175px;
+    left: 1350px;
+    width: 360px;
+    height: 400px;
+    background: #2b2b2b;
+    border-radius: 14px;
+    visibility: visible;
+}
+
+.IFELSE-team-text {
+    font-weight: 600;
+    font-family: 'Inter';
+    font-size: 24px;
+    display: inline-block;
+    position: absolute;
+    top: 205px;
+    left: 1385px;
+    width: 290px;
+    text-align: center;
+}
+
+.IFELSE-team-JosephGeis-image {
+    border: none;
+    border-radius: 40px;
+    display: inline-block;
+    position: absolute;
+    top: 255px;
+    left: 1385px;
+    width: 65px;
+    height: 65px;
+}
+
+.IFELSE-team-lleyton-image {
+    border: none;
+    border-radius: 40px;
+    display: inline-block;
+    position: absolute;
+    top: 255px;
+    left: 1499px;
+    width: 65px;
+    height: 65px;
+}
+
+.IFELSE-team-idkwuu-image {
+    border: none;
+    border-radius: 40px;
+    display: inline-block;
+    position: absolute;
+    top: 255px;
+    left: 1610px;
+    width: 65px;
+    height: 65px;
+}
+
+.IFELSE-team-niilas-image {
+    border: none;
+    border-radius: 40px;
+    display: inline-block;
+    position: absolute;
+    top: 355px;
+    left: 1385px;
+    width: 65px;
+    height: 65px;
+}
+
+.IFELSE-team-Grify-image {
+    border: none;
+    border-radius: 40px;
+    display: inline-block;
+    position: absolute;
+    top: 355px;
+    left: 1499px;
+    width: 65px;
+    height: 65px;
+}
+
+.IFELSE-team-Edaz-image {
+    border: none;
+    border-radius: 40px;
+    display: inline-block;
+    position: absolute;
+    top: 355px;
+    left: 1610px;
+    width: 65px;
+    height: 65px;
+}
+
+.IFELSE-team-TheModdedChicken-image {
+    border: none;
+    border-radius: 40px;
+    display: inline-block;
+    position: absolute;
+    top: 465px;
+    left: 1499px;
+    width: 65px;
+    height: 65px;
+}
+
+.IFELSE-links-space {
+    position: absolute;
+    top: 610px;
+    left: 1350px;
+    width: 360px;
+    height: 205px;
+    background: #2b2b2b;
+    border-radius: 14px;
+    visibility: visible;
+}
+
+.IFELSE-links-text {
+    font-weight: 600;
+    font-family: 'Inter';
+    font-size: 24px;
+    display: inline-block;
+    position: absolute;
+    top: 640px;
+    left: 1385px;
+    width: 290px;
+    text-align: center;
 }
