@@ -97,6 +97,12 @@ input, select {
 
 /* My Custom Styling */
 
+h1 {
+    font-weight: 600;
+    font-family: 'Inter';
+}
+
+/*
 header {
     background-color: #222222;
     padding: 15px;
@@ -105,27 +111,11 @@ header {
     font-size: 150%;
     font-weight: 100;
     color: white;
-}
+} */
 
 body {
     background-color: #111111;
     color: #cccccc;
-}
-
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    font-family: 'Inter', sans-serif;
-    appearance: none;       /* Remove default arrow */
-    background-image: url(...);   /* Add custom arrow */
-    background-color: #222222;
-    border: 0px;
-    height: 28px;
-    width: 100px;
-    text-align: center;
-    font-size: 100%;
-    font-weight: 600;
-    color: white;
 }
 
 .bagelImage {
@@ -138,6 +128,110 @@ select {
 }
 
 h2, p {
+    font-family: 'Inter';
+}
+
+.pageSelect {
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: 'Inter';
+    appearance: none;       /* Remove default arrow */
+    background-image: url(...);   /* Add custom arrow */
+    background-color: #222222;
+    border: 0px;
+    height: 28px;
+    width: 100px;
+    text-align: center;
+    font-size: 100%;
+    font-weight: 600;
     color: white;
-    font-family: 'Inter', sans-serif;
+}
+
+/* Home Page */
+
+.profile-panel-text {
+    font-weight: 600;
+    font-family: 'Inter';
+    font-size: 24px;
+    display: inline-block;
+    position: absolute;
+    top: 190px;
+    left: 265px;
+}
+
+.profile-panel-image {
+    border: none;
+    display: inline-block;
+    border-radius: 40px;
+    position: absolute;
+    outline: none;
+    width: 55px;
+    height: 55px;
+    top: 175px;
+    left: 180px;
+}
+
+.projectsButton {
+    background-color: #42a4f5;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    left: 1608px;
+    top: 7px;
+    outline: none;
+}
+
+.bagelButton {
+    background-color: #42a4f5;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    left: 1722px;
+    top: 7px;
+    outline: none;
+}
+
+.contactButton {
+    background-color: #42a4f5;
+    border: none;
+    color: white;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    left: 1818px;
+    top: 7px;
+    outline: none;
+}
+
+.profile-space {
+    position: absolute;
+    top: 145px;
+    left: 150px;
+    width: 400px;
+    height: 700px;
+    background: #222222;
+    border-radius: 14px;
 }
