@@ -1,41 +1,5 @@
 /* Home page events */
 
-function arrowHoverOffEvent(name) {
-    var text = document.getElementById(name);
-
-    var pos = text.getBoundingClientRect();
-
-        var curPos = pos.left;
-
-        var id = setInterval(frame, 10);
-        function frame() {
-            if (curPos == 260) {
-                clearInterval(id);
-            } else {
-                curPos--;
-                text.style.left = curPos + 'px';
-            }
-        }
-}
-
-function arrowHoverEvent(name) {
-    var text = document.getElementById(name);
-
-    var pos = text.getBoundingClientRect();
-
-        var curPos = pos.left;
-
-        var id = setInterval(frame, 10);
-        function frame() {
-            if (curPos == 275) {
-                clearInterval(id);
-            } else {
-                curPos++;
-                text.style.left = curPos + 'px';
-            }
-        }
-}
-
 function changePage(name) {
     elem = document.getElementById(name);
 

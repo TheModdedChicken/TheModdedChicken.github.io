@@ -257,6 +257,13 @@ h2, p {
     left: 260px;
     font-weight: 400;
     font-size: 20px;
+
+    transform: translateX(0px);
+    transition: transform 150ms ease-in;
+}
+
+.IFELSE-home-text:hover {
+    transform: translateX(15px);
 }
 
 .IFELSE-straight {
@@ -502,6 +509,12 @@ h2, p {
     left: 260px;
     font-weight: 400;
     font-size: 20px;
+    transform: translateX(0px);
+    transition: transform 150ms ease-in;
+}
+
+.Clocks-home-text:hover {
+    transform: translateX(15px);
 }
 
 .profile-panel-text::after {
@@ -515,7 +528,7 @@ h2, p {
 
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform 250ms ease-in;
+    transition: transform 200ms ease-in;
 }
 
 .profile-panel-text:hover::after {
