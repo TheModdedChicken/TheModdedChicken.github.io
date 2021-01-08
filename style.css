@@ -158,6 +158,7 @@ h2, p {
     position: absolute;
     top: 190px;
     left: 260px;
+    cursor: pointer;
 }
 
 .profile-panel-image {
@@ -272,7 +273,7 @@ h2, p {
     cursor: pointer;
     top: 286px;
     left: 260px;
-    width: 15px;
+    width: 150px;
     height: 20px;
 }
 
@@ -300,6 +301,7 @@ h2, p {
     height: 216px;
     top: 175px;
     left: 685px;
+    visibility: hidden;
 }
 
 .IFELSE-team-space {
@@ -311,6 +313,7 @@ h2, p {
     background: #2b2b2b;
     border-radius: 14px;
     visibility: visible;
+    visibility: hidden;
 }
 
 .IFELSE-team-text {
@@ -323,6 +326,7 @@ h2, p {
     left: 1385px;
     width: 290px;
     text-align: center;
+    visibility: hidden;
 }
 
 .IFELSE-team-JosephGeis-image {
@@ -334,6 +338,7 @@ h2, p {
     left: 1385px;
     width: 65px;
     height: 65px;
+    visibility: hidden;
 }
 
 .IFELSE-team-lleyton-image {
@@ -345,6 +350,7 @@ h2, p {
     left: 1499px;
     width: 65px;
     height: 65px;
+    visibility: hidden;
 }
 
 .IFELSE-team-idkwuu-image {
@@ -356,6 +362,7 @@ h2, p {
     left: 1610px;
     width: 65px;
     height: 65px;
+    visibility: hidden;
 }
 
 .IFELSE-team-niilas-image {
@@ -367,6 +374,7 @@ h2, p {
     left: 1385px;
     width: 65px;
     height: 65px;
+    visibility: hidden;
 }
 
 .IFELSE-team-Grify-image {
@@ -378,6 +386,7 @@ h2, p {
     left: 1499px;
     width: 65px;
     height: 65px;
+    visibility: hidden;
 }
 
 .IFELSE-team-Edaz-image {
@@ -389,6 +398,7 @@ h2, p {
     left: 1610px;
     width: 65px;
     height: 65px;
+    visibility: hidden;
 }
 
 .IFELSE-team-TheModdedChicken-image {
@@ -400,6 +410,7 @@ h2, p {
     left: 1499px;
     width: 65px;
     height: 65px;
+    visibility: hidden;
 }
 
 .IFELSE-links-space {
@@ -411,6 +422,7 @@ h2, p {
     background: #2b2b2b;
     border-radius: 14px;
     visibility: visible;
+    visibility: hidden;
 }
 
 .IFELSE-links-text {
@@ -423,8 +435,89 @@ h2, p {
     left: 1385px;
     width: 290px;
     text-align: center;
+    visibility: hidden;
 }
 
 .IFELSE-GitHub-image-link {
-    
+    border: none;
+    border-radius: 40px;
+    display: inline-block;
+    position: absolute;
+    top: 680px;
+    left: 1425px;
+    width: 80px;
+    height: 80px;
+    visibility: hidden;
+}
+
+.IFELSE-Twitter-image-link {
+    border: none;
+    border-radius: 40px;
+    display: inline-block;
+    position: absolute;
+    top: 680px;
+    left: 1560px;
+    width: 80px;
+    height: 80px;
+    visibility: hidden;
+}
+
+/* Clocks Home Section */
+
+.lineDegree2 {
+    transform: rotate(180deg);
+    position: absolute;
+    top: 277px;
+    left: 212px;
+    width: 10px; 
+    height: 90px;  
+    border: solid 4px #c6c5c3;
+    border-color: #c6c5c3 transparent transparent transparent;
+    border-radius: 0 1000px 0 0;
+}
+
+.Clocks-straight {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 364px;
+    left: 237px;
+    border-left: solid 4px #c6c5c3;
+    height: 18px;
+}
+
+.Clocks-spacer-div {
+    position: absolute;
+    cursor: pointer;
+    top: 363px;
+    left: 260px;
+    width: 150px;
+    height: 20px;
+}
+
+.Clocks-home-text {
+    font-family: 'Inter';
+    position: absolute;
+    cursor: pointer;
+    top: 364px;
+    left: 260px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.Clocks-panel-image {
+    position: absolute;
+    top: 175px;
+    left: 685px;
+    height: 100px;
+    width: 100px;
+    visibility: hidden;
+}
+
+.Clocks-text {
+    position: absolute;
+    top: 470px;
+    left: 1130px;
+    font-family: 'Inter';
+    font-weight: 300;
+    visibility: hidden;
 }
