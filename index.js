@@ -14,13 +14,17 @@ function changePage(name) {
     if (name === 'Clocks-home-text') {
         hideAllInfoElements('Clocks');
     }
+
+    if (name === 'Datapacks-home-text') {
+        hideAllInfoElements('Datapacks');
+    }
 }
 
 document.addEventListener ("keydown", function (zEvent) {
     if (zEvent.altKey  &&  zEvent.shiftKey  &&  zEvent.key === "S") {
         console.log('Yay')
     }
-} );
+});
 
 function hideAllInfoElements(section) {
     /* Home Elements */
@@ -45,6 +49,9 @@ function hideAllInfoElements(section) {
 
     /* Clocks Elements */
     document.getElementById('Clocks-text').style.visibility = 'hidden';
+
+    /* Datapacks Elements */
+    document.getElementById('Datapacks-text').style.visibility = 'hidden';
 
     showSelectedInfoElements(section);
 }
@@ -75,5 +82,9 @@ function showSelectedInfoElements(section) {
 
     if (section === 'Clocks') {
         document.getElementById('Clocks-text').style.visibility = 'visible';
+    }
+
+    if (section === 'Datapacks') {
+        document.getElementById('Datapacks-text').style.visibility = 'visible';
     }
 }

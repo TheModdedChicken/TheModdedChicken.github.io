@@ -240,6 +240,20 @@ h2, p {
     border-radius: 14px;
 }
 
+/* Selected Home Info Box */
+
+.info-space {
+    position: absolute;
+    top: 145px;
+    left: 650px;
+    width: 1100px;
+    height: 700px;
+    background: #222222;
+    border-radius: 14px;
+}
+
+/* IfElse Home Section */
+
 .lineDegree1 {
     transform: rotate(180deg);
     position: absolute;
@@ -286,20 +300,6 @@ h2, p {
     width: 150px;
     height: 20px;
 }
-
-/* Selected Home Info Box */
-
-.info-space {
-    position: absolute;
-    top: 145px;
-    left: 650px;
-    width: 1100px;
-    height: 700px;
-    background: #222222;
-    border-radius: 14px;
-}
-
-/* IfElse Home Section */
 
 .IFELSE-panel-image {
     border: none;
@@ -557,6 +557,54 @@ h2, p {
 }
 
 .Clocks-text {
+    position: absolute;
+    top: 470px;
+    left: 1130px;
+    font-family: 'Inter';
+    font-weight: 300;
+    visibility: hidden;
+}
+
+/* Datapacks Home Section */
+
+.Datapacks-home-text {
+    font-family: 'Inter';
+    position: absolute;
+    cursor: pointer;
+    top: 442px;
+    left: 260px;
+    font-weight: 400;
+    font-size: 20px;
+    transform: translateX(0px);
+    transition: transform 150ms ease-in;
+}
+
+.Datapacks-home-text:hover {
+    transform: translateX(15px);
+}
+
+.Datapacks-straight {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 442px;
+    left: 237px;
+    border-left: solid 4px #c6c5c3;
+    height: 18px;
+}
+
+.lineDegree3 {
+    transform: rotate(180deg);
+    position: absolute;
+    top: 355px;
+    left: 212px;
+    width: 10px; 
+    height: 90px;  
+    border: solid 4px #c6c5c3;
+    border-color: #c6c5c3 transparent transparent transparent;
+    border-radius: 0 1000px 0 0;
+}
+
+.Datapacks-text {
     position: absolute;
     top: 470px;
     left: 1130px;
