@@ -159,6 +159,9 @@ h2, p {
     top: 190px;
     left: 260px;
     cursor: pointer;
+
+    transform: translateX(0px);
+    transition: transform 200ms ease-in;
 }
 
 .profile-panel-image {
@@ -309,6 +312,15 @@ h2, p {
     top: 175px;
     left: 685px;
     visibility: hidden;
+}
+
+.IFELSE-about-paragraph {
+    font-family: 'Inter';
+    position: absolute;
+    top: 420px;
+    left: 705px;
+    visibility: hidden;
+    white-space: pre-line;
 }
 
 .IFELSE-team-space {

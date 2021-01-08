@@ -3,6 +3,10 @@
 function changePage(name) {
     elem = document.getElementById(name);
 
+    if (name == 'profile-panel-text') {
+        hideAllInfoElements('Home');
+    }
+
     if (name == 'IFELSE-home-text') {
         hideAllInfoElements('IFELSE');
     }
@@ -13,6 +17,9 @@ function changePage(name) {
 }
 
 function hideAllInfoElements(section) {
+    /* Home Elements */
+    
+
     /* If Else Elements */
     document.getElementById('IFELSE-panel-image').style.visibility = 'hidden';
     document.getElementById('IFELSE-team-space').style.visibility = 'hidden';
@@ -28,6 +35,7 @@ function hideAllInfoElements(section) {
     document.getElementById('IFELSE-links-text').style.visibility = 'hidden';
     document.getElementById('IFELSE-GitHub-image-link').style.visibility = 'hidden';
     document.getElementById('IFELSE-Twitter-image-link').style.visibility = 'hidden';
+    document.getElementById('IFELSE-about-paragraph').style.visibility = 'hidden';
 
     /* Clocks Elements */
     document.getElementById('Clocks-text').style.visibility = 'hidden';
@@ -36,6 +44,11 @@ function hideAllInfoElements(section) {
 }
 
 function showSelectedInfoElements(section) {
+
+    if (section == 'Home') {
+        
+    }
+
     if (section == 'IFELSE') {
         document.getElementById('IFELSE-panel-image').style.visibility = 'visible';
         document.getElementById('IFELSE-team-space').style.visibility = 'visible';
@@ -51,6 +64,7 @@ function showSelectedInfoElements(section) {
         document.getElementById('IFELSE-links-text').style.visibility = 'visible';
         document.getElementById('IFELSE-GitHub-image-link').style.visibility = 'visible';
         document.getElementById('IFELSE-Twitter-image-link').style.visibility = 'visible';
+        document.getElementById('IFELSE-about-paragraph').style.visibility = 'visible';
     }
 
     if (section == 'Clocks') {
