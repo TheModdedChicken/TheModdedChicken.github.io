@@ -3,15 +3,15 @@
 function changePage(name) {
     elem = document.getElementById(name);
 
-    if (name == 'profile-panel-text') {
+    if (name === 'profile-panel-text') {
         hideAllInfoElements('Home');
     }
 
-    if (name == 'IFELSE-home-text') {
+    if (name === 'IFELSE-home-text') {
         hideAllInfoElements('IFELSE');
     }
 
-    if (name == 'Clocks-home-text') {
+    if (name === 'Clocks-home-text') {
         hideAllInfoElements('Clocks');
     }
 }
@@ -45,11 +45,11 @@ function hideAllInfoElements(section) {
 
 function showSelectedInfoElements(section) {
 
-    if (section == 'Home') {
+    if (section === 'Home') {
         
     }
 
-    if (section == 'IFELSE') {
+    if (section === 'IFELSE') {
         document.getElementById('IFELSE-panel-image').style.visibility = 'visible';
         document.getElementById('IFELSE-team-space').style.visibility = 'visible';
         document.getElementById('IFELSE-team-text').style.visibility = 'visible';
@@ -67,7 +67,7 @@ function showSelectedInfoElements(section) {
         document.getElementById('IFELSE-about-paragraph').style.visibility = 'visible';
     }
 
-    if (section == 'Clocks') {
+    if (section === 'Clocks') {
         document.getElementById('Clocks-text').style.visibility = 'visible';
     }
 }
