@@ -16,6 +16,12 @@ function changePage(name) {
     }
 }
 
+document.addEventListener ("keydown", function (zEvent) {
+    if (zEvent.altKey  &&  zEvent.shiftKey  &&  zEvent.key === "S") {
+        console.log('Yay')
+    }
+} );
+
 function hideAllInfoElements(section) {
     /* Home Elements */
     
