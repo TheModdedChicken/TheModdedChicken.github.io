@@ -1,37 +1,39 @@
 /* Home page events */
 
 function arrowHoverOffEvent(name) {
-    var arrow = document.getElementById(name);
-    var pos = arrow.getBoundingClientRect();
+    var text = document.getElementById(name);
 
-    var curPos = pos.left;
+    var pos = text.getBoundingClientRect();
 
-    var id = setInterval(frame, 10);
-    function frame() {
-        if (curPos == 260) {
-            clearInterval(id);
-        } else {
-            curPos--;
-            arrow.style.left = curPos + 'px';
+        var curPos = pos.left;
+
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (curPos == 260) {
+                clearInterval(id);
+            } else {
+                curPos--;
+                text.style.left = curPos + 'px';
+            }
         }
-    }
 }
 
 function arrowHoverEvent(name) {
-    var arrow = document.getElementById(name);
-    var pos = arrow.getBoundingClientRect();
+    var text = document.getElementById(name);
 
-    var curPos = pos.left;
+    var pos = text.getBoundingClientRect();
 
-    var id = setInterval(frame, 10);
-    function frame() {
-        if (curPos == 275) {
-            clearInterval(id);
-        } else {
-            curPos++;
-            arrow.style.left = curPos + 'px';
+        var curPos = pos.left;
+
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (curPos == 275) {
+                clearInterval(id);
+            } else {
+                curPos++;
+                text.style.left = curPos + 'px';
+            }
         }
-    }
 }
 
 function changePage(name) {
