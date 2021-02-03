@@ -7,17 +7,14 @@ function changePage(name) {
         hideAllInfoElements('Home');
     }
 
-    if (name === 'IFELSE-home-text') {
-        hideAllInfoElements('IFELSE');
+    if (name === 'Tint-home-text') {
+        hideAllInfoElements('Tint');
     }
 
     if (name === 'Clocks-home-text') {
         hideAllInfoElements('Clocks');
     }
 
-    if (name === 'Datapacks-home-text') {
-        hideAllInfoElements('Datapacks');
-    }
 }
 
 document.addEventListener ("keydown", function (zEvent) {
@@ -30,28 +27,11 @@ function hideAllInfoElements(section) {
     /* Home Elements */
     
 
-    /* If Else Elements */
-    document.getElementById('IFELSE-panel-image').style.visibility = 'hidden';
-    document.getElementById('IFELSE-team-space').style.visibility = 'hidden';
-    document.getElementById('IFELSE-team-text').style.visibility = 'hidden';
-    document.getElementById('IFELSE-team-JosephGeis-image').style.visibility = 'hidden';
-    document.getElementById('IFELSE-team-lleyton-image').style.visibility = 'hidden';
-    document.getElementById('IFELSE-team-idkwuu-image').style.visibility = 'hidden';
-    document.getElementById('IFELSE-team-niilas-image').style.visibility = 'hidden';
-    document.getElementById('IFELSE-team-Grify-image').style.visibility = 'hidden';
-    document.getElementById('IFELSE-team-Edaz-image').style.visibility = 'hidden';
-    document.getElementById('IFELSE-team-TheModdedChicken-image').style.visibility = 'hidden';
-    document.getElementById('IFELSE-links-space').style.visibility = 'hidden';
-    document.getElementById('IFELSE-links-text').style.visibility = 'hidden';
-    document.getElementById('IFELSE-GitHub-image-link').style.visibility = 'hidden';
-    document.getElementById('IFELSE-Twitter-image-link').style.visibility = 'hidden';
-    document.getElementById('IFELSE-about-paragraph').style.visibility = 'hidden';
+    /* Tint Elements */
+    document.getElementById('Tint-panel').style.visibility = 'hidden';
 
     /* Clocks Elements */
-    document.getElementById('Clocks-text').style.visibility = 'hidden';
-
-    /* Datapacks Elements */
-    document.getElementById('Datapacks-text').style.visibility = 'hidden';
+    document.getElementById('Clocks-panel').style.visibility = 'hidden';
 
     showSelectedInfoElements(section);
 }
@@ -62,29 +42,24 @@ function showSelectedInfoElements(section) {
         
     }
 
-    if (section === 'IFELSE') {
-        document.getElementById('IFELSE-panel-image').style.visibility = 'visible';
-        document.getElementById('IFELSE-team-space').style.visibility = 'visible';
-        document.getElementById('IFELSE-team-text').style.visibility = 'visible';
-        document.getElementById('IFELSE-team-JosephGeis-image').style.visibility = 'visible';
-        document.getElementById('IFELSE-team-lleyton-image').style.visibility = 'visible';
-        document.getElementById('IFELSE-team-idkwuu-image').style.visibility = 'visible';
-        document.getElementById('IFELSE-team-niilas-image').style.visibility = 'visible';
-        document.getElementById('IFELSE-team-Grify-image').style.visibility = 'visible';
-        document.getElementById('IFELSE-team-Edaz-image').style.visibility = 'visible';
-        document.getElementById('IFELSE-team-TheModdedChicken-image').style.visibility = 'visible';
-        document.getElementById('IFELSE-links-space').style.visibility = 'visible';
-        document.getElementById('IFELSE-links-text').style.visibility = 'visible';
-        document.getElementById('IFELSE-GitHub-image-link').style.visibility = 'visible';
-        document.getElementById('IFELSE-Twitter-image-link').style.visibility = 'visible';
-        document.getElementById('IFELSE-about-paragraph').style.visibility = 'visible';
+    if (section === 'Tint') {
+        document.getElementById('Tint-panel').style.visibility = 'visible';
     }
 
     if (section === 'Clocks') {
-        document.getElementById('Clocks-text').style.visibility = 'visible';
+        document.getElementById('Clocks-panel').style.visibility = 'visible';
     }
 
-    if (section === 'Datapacks') {
-        document.getElementById('Datapacks-text').style.visibility = 'visible';
+}
+
+function moveTintChangelog (direction) {
+    if (direction == 'down') {
+        var changelog = document.getElementById('Tint-panel-changelog-panel');
+
+        changelog.style.height = '335px';
+    } else if (direction == 'up') {
+        var changelog = document.getElementById('Tint-panel-changelog-panel');
+
+        changelog.style.height = '395px';
     }
 }

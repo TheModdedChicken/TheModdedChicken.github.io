@@ -150,391 +150,37 @@ h2, p {
 
 /* Home Page */
 
+.profile-panel-image {
+    position: relative;
+    float: left;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    width: 55px;
+    height: 55px;
+    top: 30px;
+    left: 35px;
+}
+
 .profile-panel-text {
     font-weight: 600;
     font-family: 'Inter';
     font-size: 24px;
-    display: inline-block;
-    position: absolute;
-    top: 190px;
-    left: 260px;
+    position: relative;
     cursor: pointer;
+    top: 45px;
+    left: 55px;
 
     transform: translateX(0px);
     transition: transform 200ms ease-in;
 }
 
-.profile-panel-image {
-    border: none;
-    display: inline-block;
-    border-radius: 40px;
-    position: absolute;
-    outline: none;
-    width: 55px;
-    height: 55px;
-    top: 175px;
-    left: 185px;
-}
-
-.projectsButton {
-    background-color: #42a4f5;
-    border: none;
-    color: white;
-    padding: 8px 14px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 10px;
-    position: absolute;
-    left: 1608px;
-    top: 7px;
-    outline: none;
-}
-
-.bagelButton {
-    background-color: #42a4f5;
-    border: none;
-    color: white;
-    padding: 8px 14px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 10px;
-    position: absolute;
-    left: 1722px;
-    top: 7px;
-    outline: none;
-}
-
-.contactButton {
-    background-color: #42a4f5;
-    border: none;
-    color: white;
-    padding: 8px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 10px;
-    position: absolute;
-    left: 1818px;
-    top: 7px;
-    outline: none;
-}
-
-.profile-space {
-    position: absolute;
-    top: 145px;
-    left: 150px;
-    width: 400px;
-    height: 700px;
-    background: #222222;
-    border-radius: 14px;
-}
-
-/* Selected Home Info Box */
-
-.info-space {
-    position: absolute;
-    top: 145px;
-    left: 650px;
-    width: 1100px;
-    height: 700px;
-    background: #222222;
-    border-radius: 14px;
-}
-
-/* IfElse Home Section */
-
-.lineDegree1 {
-    transform: rotate(180deg);
-    position: absolute;
-    top: 240px;
-    left: 212px;
-    width: 10px; 
-    height: 50px;  
-    border: solid 4px #c6c5c3;
-    border-color: #c6c5c3 transparent transparent transparent;
-    border-radius: 0 1000px 0 0;
-}
-
-.IFELSE-home-text {
-    font-family: 'Inter';
-    position: absolute;
-    cursor: pointer;
-    top: 286px;
-    left: 260px;
-    font-weight: 400;
-    font-size: 20px;
-
-    transform: translateX(0px);
-    transition: transform 150ms ease-in;
-}
-
-.IFELSE-home-text:hover {
-    transform: translateX(15px);
-}
-
-.IFELSE-straight {
-    transform: rotate(90deg);
-    position: absolute;
-    top: 287px;
-    left: 237px;
-    border-left: solid 4px #c6c5c3;
-    height: 18px;
-}
-
-.IFELSE-spacer-div {
-    position: absolute;
-    cursor: pointer;
-    top: 286px;
-    left: 260px;
-    width: 150px;
-    height: 20px;
-}
-
-.IFELSE-panel-image {
-    border: none;
-    display: inline-block;
-    border-radius: 14px;
-    position: absolute;
-    outline: none;
-    width: 630px;
-    height: 216px;
-    top: 175px;
-    left: 685px;
-    visibility: hidden;
-}
-
-.IFELSE-about-paragraph {
-    font-family: 'Inter';
-    position: absolute;
-    top: 420px;
-    left: 705px;
-    visibility: hidden;
-    white-space: pre-line;
-}
-
-.IFELSE-team-space {
-    position: absolute;
-    top: 175px;
-    left: 1350px;
-    width: 360px;
-    height: 400px;
-    background: #2b2b2b;
-    border-radius: 14px;
-    visibility: visible;
-    visibility: hidden;
-}
-
-.IFELSE-team-text {
-    font-weight: 600;
-    font-family: 'Inter';
-    font-size: 24px;
-    display: inline-block;
-    position: absolute;
-    top: 205px;
-    left: 1385px;
-    width: 290px;
-    text-align: center;
-    visibility: hidden;
-}
-
-.IFELSE-team-JosephGeis-image {
-    border: none;
-    border-radius: 40px;
-    display: inline-block;
-    position: absolute;
-    top: 255px;
-    left: 1385px;
-    width: 65px;
-    height: 65px;
-    visibility: hidden;
-}
-
-.IFELSE-team-lleyton-image {
-    border: none;
-    border-radius: 40px;
-    display: inline-block;
-    position: absolute;
-    top: 255px;
-    left: 1499px;
-    width: 65px;
-    height: 65px;
-    visibility: hidden;
-}
-
-.IFELSE-team-idkwuu-image {
-    border: none;
-    border-radius: 40px;
-    display: inline-block;
-    position: absolute;
-    top: 255px;
-    left: 1610px;
-    width: 65px;
-    height: 65px;
-    visibility: hidden;
-}
-
-.IFELSE-team-niilas-image {
-    border: none;
-    border-radius: 40px;
-    display: inline-block;
-    position: absolute;
-    top: 355px;
-    left: 1385px;
-    width: 65px;
-    height: 65px;
-    visibility: hidden;
-}
-
-.IFELSE-team-Grify-image {
-    border: none;
-    border-radius: 40px;
-    display: inline-block;
-    position: absolute;
-    top: 355px;
-    left: 1499px;
-    width: 65px;
-    height: 65px;
-    visibility: hidden;
-}
-
-.IFELSE-team-Edaz-image {
-    border: none;
-    border-radius: 40px;
-    display: inline-block;
-    position: absolute;
-    top: 355px;
-    left: 1610px;
-    width: 65px;
-    height: 65px;
-    visibility: hidden;
-}
-
-.IFELSE-team-TheModdedChicken-image {
-    border: none;
-    border-radius: 40px;
-    display: inline-block;
-    position: absolute;
-    top: 465px;
-    left: 1499px;
-    width: 65px;
-    height: 65px;
-    visibility: hidden;
-}
-
-.IFELSE-links-space {
-    position: absolute;
-    top: 610px;
-    left: 1350px;
-    width: 360px;
-    height: 205px;
-    background: #2b2b2b;
-    border-radius: 14px;
-    visibility: visible;
-    visibility: hidden;
-}
-
-.IFELSE-links-text {
-    font-weight: 600;
-    font-family: 'Inter';
-    font-size: 24px;
-    display: inline-block;
-    position: absolute;
-    top: 640px;
-    left: 1385px;
-    width: 290px;
-    text-align: center;
-    visibility: hidden;
-}
-
-.IFELSE-GitHub-image-link {
-    border: none;
-    border-radius: 40px;
-    display: inline-block;
-    position: absolute;
-    top: 680px;
-    left: 1425px;
-    width: 80px;
-    height: 80px;
-    visibility: hidden;
-}
-
-.IFELSE-Twitter-image-link {
-    border: none;
-    border-radius: 40px;
-    display: inline-block;
-    position: absolute;
-    top: 680px;
-    left: 1560px;
-    width: 80px;
-    height: 80px;
-    visibility: hidden;
-}
-
-/* Clocks Home Section */
-
-.lineDegree2 {
-    transform: rotate(180deg);
-    position: absolute;
-    top: 277px;
-    left: 212px;
-    width: 10px; 
-    height: 90px;  
-    border: solid 4px #c6c5c3;
-    border-color: #c6c5c3 transparent transparent transparent;
-    border-radius: 0 1000px 0 0;
-}
-
-.Clocks-straight {
-    transform: rotate(90deg);
-    position: absolute;
-    top: 364px;
-    left: 237px;
-    border-left: solid 4px #c6c5c3;
-    height: 18px;
-}
-
-.Clocks-spacer-div {
-    position: absolute;
-    cursor: pointer;
-    top: 363px;
-    left: 260px;
-    width: 150px;
-    height: 20px;
-}
-
-.Clocks-home-text {
-    font-family: 'Inter';
-    position: absolute;
-    cursor: pointer;
-    top: 364px;
-    left: 260px;
-    font-weight: 400;
-    font-size: 20px;
-    transform: translateX(0px);
-    transition: transform 150ms ease-in;
-}
-
-.Clocks-home-text:hover {
-    transform: translateX(15px);
-}
-
 .profile-panel-text::after {
     content: "";
     position: absolute;
-    left: 0;
+    left: 55px;
     bottom: -1px;
-    width: 100%;
+    width: 235px;
     height: 2px;
     background: currentColor;
 
@@ -547,56 +193,77 @@ h2, p {
     transform: scaleX(1);
 }
 
-.Clocks-panel-image {
-    position: absolute;
-    top: 175px;
-    left: 685px;
-    height: 100px;
-    width: 100px;
-    visibility: hidden;
+.heirarchy {
+    position: relative;
+    top: 145px;
+    left: 15%;
+    width: 400px;
+    height: 700px;
+    background: #222222;
+    border-radius: 14px;
 }
 
-.Clocks-text {
-    position: absolute;
-    top: 470px;
-    left: 1130px;
-    font-family: 'Inter';
-    font-weight: 300;
-    visibility: hidden;
+/* Selected Home Info Box */
+
+.info-space {
+    position: relative;
+    bottom: 555px;
+    left: 44%;
+    width: 800px;
+    height: 700px;
+    background: #222222;
+    border-radius: 14px;
 }
 
-/* Datapacks Home Section */
+/* IfElse Home Section */
 
-.Datapacks-home-text {
+.lineDegree1 {
+    transform: rotate(90deg);
+    position: relative;
+    bottom: 2px;
+    right: 38px;
+    width: 10px; 
+    height: 50px;  
+    border: solid 4px #c6c5c3;
+    border-color: #c6c5c3 transparent transparent transparent;
+    border-radius: 0 1000px 0 0;
+}
+
+.Tint-home-text {
     font-family: 'Inter';
-    position: absolute;
+    position: relative;
+    float: left;
     cursor: pointer;
-    top: 442px;
-    left: 260px;
     font-weight: 400;
     font-size: 20px;
+    top: 115px;
+    left: 60px;
+
     transform: translateX(0px);
     transition: transform 150ms ease-in;
 }
 
-.Datapacks-home-text:hover {
-    transform: translateX(15px);
+.Tint-home-text:hover {
+    transform: translateX(10px);
 }
 
-.Datapacks-straight {
+.Tint-straight {
     transform: rotate(90deg);
-    position: absolute;
-    top: 442px;
-    left: 237px;
+    position: relative;
+    float: left;
+    top: 125px;
+    right: 12px;
     border-left: solid 4px #c6c5c3;
     height: 18px;
 }
 
-.lineDegree3 {
-    transform: rotate(180deg);
-    position: absolute;
-    top: 355px;
-    left: 212px;
+/* Clocks Home Section */
+
+.lineDegree2 {
+    transform: rotate(90deg);
+    position: relative;
+    bottom: 22px;
+    right: 58px;
     width: 10px; 
     height: 90px;  
     border: solid 4px #c6c5c3;
@@ -604,11 +271,126 @@ h2, p {
     border-radius: 0 1000px 0 0;
 }
 
-.Datapacks-text {
-    position: absolute;
-    top: 470px;
-    left: 1130px;
+.Clocks-home-text {
     font-family: 'Inter';
-    font-weight: 300;
-    visibility: hidden;
+    position: relative;
+    float: left;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 20px;
+    top: 193px;
+
+    transform: translateX(0px);
+    transition: transform 150ms ease-in;
+}
+
+.Clocks-home-text:hover {
+    transform: translateX(10px);
+}
+
+.Clocks-straight {
+    transform: rotate(90deg);
+    position: relative;
+    float: left;
+    top: 202px;
+    right: 98px;
+    border-left: solid 4px #c6c5c3;
+    height: 18px;
+}
+
+.Clocks-spacer-div {
+    position: relative;
+    float: left;
+    cursor: pointer;
+    width: 150px;
+    height: 20px;
+}
+
+/* Tint Home Section */
+
+.Tint-download-button {
+    position: relative;
+    top: 7px;
+    left: 10px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: #242424;
+}
+
+.Tint-download-button:hover line{
+    stroke: rgb(218, 218, 218);
+}
+
+.Tint-x64-download-div {
+    position: relative;
+    top: 90px;
+    width: 350px;
+    height: 50px;
+    border-radius: 6px;
+    background-color: #303030;
+    overflow: hidden;
+
+    transform: translateZ(0);
+    transition: 0.2s ease-in-out, visibility 0s;
+    /*
+    transition: background-color 0.1s ease-in;
+    transition: transform 0.2s ease-in-out;
+    transition: height 0.2s ease-in-out; */
+}
+
+.Tint-x64-download-div:hover {
+    background-color: #3a3a3a;
+    transform: scale(1.05);
+    height: 110px;
+}
+
+.Tint-ia32-download-div {
+    position: relative;
+    top: 115px;
+    width: 350px;
+    height: 50px;
+    border-radius: 6px;
+    background-color: #303030;
+    overflow: hidden;
+
+    transition: 0.2s ease-in-out, visibility 0s;
+}
+
+.Tint-ia32-download-div:hover {
+    background-color: #3a3a3a;
+    transform: scale(1.05);
+    height: 110px;
+}
+
+.Tint-arm64-download-div {
+    position: relative;
+    top: 140px;
+    width: 350px;
+    height: 50px;
+    border-radius: 6px;
+    background-color: #303030;
+    overflow: hidden;
+
+    transform: translateZ(0);
+    transition: 0.2s ease-in-out, visibility 0s;
+}
+
+.Tint-arm64-download-div:hover {
+    background-color: #3a3a3a;
+    transform: scale(1.05);
+    height: 110px;
+}
+
+.Tint-panel-changelog-panel {
+    position: relative;
+    top: 180px;
+    width: 350px;
+    height: 395px;
+    border-radius: 14px;
+    background-color: #303030;
+    text-align: center;
+
+    transition: 0.2s ease-in-out, visibility 0s;
 }

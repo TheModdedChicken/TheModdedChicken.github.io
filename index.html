@@ -19,63 +19,91 @@
 
         </header>
         <!-- Side Bar -->
-        <canvas class="profile-space"></canvas>
-        <img class="profile-panel-image" src="./images/TheModdedChicken.png" alt="TheModdedChicken">
-        <h2 class="profile-panel-text" id="profile-panel-text" onclick="changePage('profile-panel-text');">TheModdedChicken</h1>
-            <h3 id="IFELSE-home-text" class="IFELSE-home-text" onclick="changePage('IFELSE-home-text');">IfElse Network</h3>
-                <div class="IFELSE-straight"></div>
-                <div class="lineDegree1"></div>
-
-            <h3 id="Clocks-home-text" class="Clocks-home-text" onclick="changePage('Clocks-home-text');">Clocks</h3>
-                <div class="Clocks-straight"></div>
-                <div class="lineDegree2"></div>
-
-            <h3 id="Datapacks-home-text" class="Datapacks-home-text" onclick="changePage('Datapacks-home-text');">Datapacks</h3>
-                <div class="Datapacks-straight"></div>
-                <div class="lineDegree3"></div>
+        <div class="heirarchy">
+            <img class="profile-panel-image" src="https://raw.githubusercontent.com/TheModdedChicken/TheModdedChicken.github.io/main/images/TheModdedChicken.png" alt="TheModdedChicken">
+            <h2 class="profile-panel-text" id="profile-panel-text" onclick="changePage('profile-panel-text');">TheModdedChicken</h1>
+                <div class="heirarchy-clickables" style="position: relative;">
+                    <h3 id="Tint-home-text" class="Tint-home-text" onclick="changePage('Tint-home-text');">Tint</h3>
+                    <div class="Tint-straight">
+                        <div class="lineDegree1"></div>
+                    </div>
+    
+                    <h3 id="Clocks-home-text" class="Clocks-home-text" onclick="changePage('Clocks-home-text');">Clocks</h3>
+                    <div class="Clocks-straight">
+                        <div class="lineDegree2"></div>
+                    </div>
+                </div>
+        </div>
 
         <!-- Info Panel -->
-        <canvas class="info-space" id="info-space"></canvas>
+        <div class="info-space">
+    
+            <!-- Clocks Info -->
+            <div class="Clocks-panel" id="Clocks-panel" style="visibility: hidden;">
 
-        <!-- IFELSE Info -->
-        <a id="IFELSE-panel-image-a" href="http://www.ifelse.network/">
-            <img class="IFELSE-panel-image" id="IFELSE-panel-image" src="./images/IfElseLogo-1500x500px.png" id="IFELSE-info-part">
-        </a>
-            <p class="IFELSE-about-paragraph" id="IFELSE-about-paragraph">The IFELSE Network, founded by niilas and grify, is a social media for
-                connecting developers.</p>
-
-            <!-- IFELSE Team Panel -->
-            <canvas class="IFELSE-team-space" id="IFELSE-team-space"></canvas>
-                <h3 class="IFELSE-team-text" id="IFELSE-team-text">Team</h3>
-                <img class="IFELSE-team-JosephGeis-image" id="IFELSE-team-JosephGeis-image" src="https://avatars1.githubusercontent.com/u/6021466?s=96&amp;v=4">
-                <img class="IFELSE-team-lleyton-image" id="IFELSE-team-lleyton-image" src="https://avatars1.githubusercontent.com/u/26487268?s=96&amp;v=4">
-                <img class="IFELSE-team-idkwuu-image" id="IFELSE-team-idkwuu-image" src="https://avatars1.githubusercontent.com/u/42050584?s=96&amp;v=4">
-                <img class="IFELSE-team-niilas-image" id="IFELSE-team-niilas-image" src="https://avatars3.githubusercontent.com/u/43517893?s=96&amp;v=4">
-                <img class="IFELSE-team-Grify-image" id="IFELSE-team-Grify-image" src="https://avatars3.githubusercontent.com/u/44591128?s=96&amp;v=4">
-                <img class="IFELSE-team-Edaz-image" id="IFELSE-team-Edaz-image" src="https://avatars2.githubusercontent.com/u/46797041?s=96&amp;v=4">
-                <img class="IFELSE-team-TheModdedChicken-image" id="IFELSE-team-TheModdedChicken-image" src="./images/TheModdedChicken.png">
-
-            <!-- IFELSE Links Panel -->
-            <canvas class="IFELSE-links-space" id="IFELSE-links-space"></canvas>
-                <h3 class="IFELSE-links-text" id="IFELSE-links-text">Links</h3>
-                <a id="IFELSE-GitHub-image-link-a" href="https://github.com/1F3L53">
-                    <img class="IFELSE-GitHub-image-link" id="IFELSE-GitHub-image-link" src="./images/github-icon.png">
+            </div>
+    
+            <!-- Tint Info -->
+            <div class="Tint-panel" id="Tint-panel" style="position: relative; top: 30px; left: 35px; width: 800px; height: 640px;">
+                <a id="Tint-panel-image-a" href="https://github.com/TheModdedChicken/Tint" style="position: relative; float: left;">
+                    <img class="Tint-panel-image" id="Tint-panel-image" src="./images/Tint.png">
                 </a>
-                <a id="IFELSE-Twitter-image-link-a" href="https://twitter.com/IfElseNetwork">
-                    <img class="IFELSE-Twitter-image-link" id="IFELSE-Twitter-image-link" src="./images/twitter-icon.png">
-                </a>
-
-        <!-- Clocks Info -->
-        <a id="Clocks-panel-image-a">
-            
-        </a>
-            <h3 class="Clocks-text" id="Clocks-text">Nothing here yet :/</h3>
-
-        <!-- Datapacks Info -->
-        <a id="Datapacks-panel-image-a">
-            
-        </a>
-            <h3 class="Datapacks-text" id="Datapacks-text">Nothing here yet :/</h3>
-
+                <div class="Tint-panel-download-panel" style="position: relative; top: -220px; left: 380px; width: 350px;">
+                    <div class="Tint-x64-download-div" onmouseover="moveTintChangelog('down');" onmouseout="moveTintChangelog('up');">
+                        <form method="get" action="https://github.com/TheModdedChicken/Tint/releases/download/v1.0.0-beta.2/TintSetup.x64.exe">
+                            <Button type="submit" class="Tint-download-button" style="cursor: pointer; outline: none;">
+                                <svg class="Tint-download-button-svg" width="35" height="35" xmlns="http://www.w3.org/2000/svg" style="position: relative; bottom: 6px; right: 14px; border-radius:20px;">
+                                    <line stroke-linecap="round" stroke-linejoin="undefined" id="svg_15" y2="29.81386" x2="25.10989" y1="15.33038" x1="25.32967" fill-opacity="0" stroke-opacity="null" stroke-width="2.5" stroke="#fff" fill="none"/>
+                                    <line stroke="#fff" stroke-linecap="round" stroke-linejoin="undefined" id="svg_16" y2="22.90179" x2="31.70328" y1="29.93474" x1="25.54945" fill-opacity="0" stroke-opacity="null" stroke-width="2.5" fill="none"/>
+                                    <line stroke="#fff" stroke-linecap="round" stroke-linejoin="undefined" id="svg_18" y2="22.90179" x2="18.73628" y1="29.93474" x1="24.67033" fill-opacity="0" stroke-opacity="null" stroke-width="2.5" fill="none"/>
+                                </svg>
+                            </Button>
+                        </form>
+                        <h3 style="position: relative; top: -22px; left: 60px; font-family: 'Inter'; font-weight: 600; font-size: 16px;">TintSetup.x64.exe</h3>
+                        <p style="position: relative; left: 20px; top: -5px; font-size: 12px;"><span style="font-weight: 600;">File Size:</span> 69.7MB</p>
+                        <p style="position: relative; left: 20px; font-size: 12px;"><span style="font-weight: 600;">Architecture:</span> x64</p>
+                        <p style="position: relative; left: 20px; top: 5px; font-size: 12px;"><span style="font-weight: 600;">File Type:</span> Installer</p>
+                    </div>
+        
+                    <div class="Tint-ia32-download-div" onmouseover="moveTintChangelog('down');" onmouseout="moveTintChangelog('up');">
+                        <form method="get" action="https://github.com/TheModdedChicken/Tint/releases/download/v1.0.0-beta.2/TintSetup.ia32.exe">
+                            <Button type="submit" class="Tint-download-button" style="cursor: pointer; outline: none;">
+                                <svg class="Tint-download-button-svg" width="35" height="35" xmlns="http://www.w3.org/2000/svg" style="position: relative; bottom: 6px; right: 14px; border-radius:20px;">
+                                    <line stroke-linecap="round" stroke-linejoin="undefined" id="svg_15" y2="29.81386" x2="25.10989" y1="15.33038" x1="25.32967" fill-opacity="0" stroke-opacity="null" stroke-width="2.5" stroke="#fff" fill="none"/>
+                                    <line stroke="#fff" stroke-linecap="round" stroke-linejoin="undefined" id="svg_16" y2="22.90179" x2="31.70328" y1="29.93474" x1="25.54945" fill-opacity="0" stroke-opacity="null" stroke-width="2.5" fill="none"/>
+                                    <line stroke="#fff" stroke-linecap="round" stroke-linejoin="undefined" id="svg_18" y2="22.90179" x2="18.73628" y1="29.93474" x1="24.67033" fill-opacity="0" stroke-opacity="null" stroke-width="2.5" fill="none"/>
+                                </svg>
+                            </Button>
+                        </form>
+                        <h3 style="position: relative; top: -22px; left: 60px; font-family: 'Inter'; font-weight: 600; font-size: 16px;">TintSetup.ia32.exe</h3>
+                        <p style="position: relative; left: 20px; top: -5px; font-size: 12px;"><span style="font-weight: 600;">File Size:</span> 67.1MB</p>
+                        <p style="position: relative; left: 20px; font-size: 12px;"><span style="font-weight: 600;">Architecture:</span> ia32</p>
+                        <p style="position: relative; left: 20px; top: 5px; font-size: 12px;"><span style="font-weight: 600;">File Type:</span> Installer</p>
+                    </div>
+        
+                    <div class="Tint-arm64-download-div" onmouseover="moveTintChangelog('down');" onmouseout="moveTintChangelog('up');">
+                        <form method="get" action="https://github.com/TheModdedChicken/Tint/releases/download/v1.0.0-beta.2/TintSetup.arm64.exe">
+                            <Button type="submit" class="Tint-download-button" style="cursor: pointer; outline: none; border-radius:20px;">
+                                <svg class="Tint-download-button-svg" width="35" height="35" xmlns="http://www.w3.org/2000/svg" style="position: relative; bottom: 6px; right: 14px; border-radius:20px;">
+                                    <line stroke-linecap="round" stroke-linejoin="undefined" id="svg_15" y2="29.81386" x2="25.10989" y1="15.33038" x1="25.32967" fill-opacity="0" stroke-opacity="null" stroke-width="2.5" stroke="#fff" fill="none"/>
+                                    <line stroke="#fff" stroke-linecap="round" stroke-linejoin="undefined" id="svg_16" y2="22.90179" x2="31.70328" y1="29.93474" x1="25.54945" fill-opacity="0" stroke-opacity="null" stroke-width="2.5" fill="none"/>
+                                    <line stroke="#fff" stroke-linecap="round" stroke-linejoin="undefined" id="svg_18" y2="22.90179" x2="18.73628" y1="29.93474" x1="24.67033" fill-opacity="0" stroke-opacity="null" stroke-width="2.5" fill="none"/>
+                                </svg>
+                            </Button>
+                        </form>
+                        <h3 style="position: relative; top: -22px; left: 60px; font-family: 'Inter'; font-weight: 600; font-size: 16px;">TintSetup.arm64.exe</h3>
+                        <p style="position: relative; left: 20px; top: -5px; font-size: 12px;"><span style="font-weight: 600;">File Size:</span> 69.9MB</p>
+                        <p style="position: relative; left: 20px; font-size: 12px;"><span style="font-weight: 600;">Architecture:</span> arm64</p>
+                        <p style="position: relative; left: 20px; top: 5px; font-size: 12px;"><span style="font-weight: 600;">File Type:</span> Installer</p>
+                    </div>
+    
+                    <div class="Tint-panel-changelog-panel" id="Tint-panel-changelog-panel">
+                        <h3 style="position: relative; top: 20px; font-family: 'Inter'; font-weight: 500; font-size: 20px;">Changelog</h3>
+                        <p style="position: relative; top: 45px; font-size: 14px;">This is the first release of Tint!<br><br>
+                            So there isn't anything here yet :)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
