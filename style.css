@@ -195,7 +195,8 @@ h2, p {
 
 .heirarchy {
     position: relative;
-    top: 145px;
+    float: left;
+    top: 135px;
     left: 15%;
     width: 400px;
     height: 700px;
@@ -207,7 +208,7 @@ h2, p {
 
 .info-space {
     position: relative;
-    bottom: 555px;
+    top: 135px;
     left: 44%;
     width: 800px;
     height: 700px;
@@ -215,7 +216,7 @@ h2, p {
     border-radius: 14px;
 }
 
-/* IfElse Home Section */
+/* Tint Home Section */
 
 .lineDegree1 {
     transform: rotate(90deg);
@@ -293,7 +294,7 @@ h2, p {
     position: relative;
     float: left;
     top: 202px;
-    right: 98px;
+    right: 97px;
     border-left: solid 4px #c6c5c3;
     height: 18px;
 }
