@@ -65,15 +65,15 @@ function moveTintChangelog (direction) {
 }
 
 if(window.location.hash) {
-    var hash = window.location.hash.substring(1);
+    var hash = window.location.hash.substring(1).toLowerCase();
 
-    if (hash = 'Tint') {
+    if (hash == 'tint') {
         changePage('Tint-home-text');
     }
-    else if (hash = 'Clocks') {
+    else if (hash == 'clocks') {
         changePage('Clocks-home-text');
     }
-    else if (hash = 'Home') {
+    else if (hash == 'home') {
         changePage('profile-panel-text');
     }
 } else {
