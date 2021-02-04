@@ -63,3 +63,19 @@ function moveTintChangelog (direction) {
         changelog.style.height = '395px';
     }
 }
+
+if(window.location.hash) {
+    var hash = window.location.hash.substring(1);
+
+    if (hash = 'Tint') {
+        changePage('Tint-home-text');
+    }
+    else if (hash = 'Clocks') {
+        changePage('Clocks-home-text');
+    }
+    else if (hash = 'Home') {
+        changePage('profile-panel-text');
+    }
+} else {
+    // Fragment doesn't exist
+}
