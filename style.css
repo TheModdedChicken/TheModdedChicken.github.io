@@ -258,7 +258,7 @@ h2, p {
     height: 18px;
 }
 
-/* Clocks Home Section */
+/* The Board Home Section */
 
 .lineDegree2 {
     transform: rotate(90deg);
@@ -272,7 +272,7 @@ h2, p {
     border-radius: 0 1000px 0 0;
 }
 
-.Clocks-home-text {
+.theboard-home-text {
     font-family: 'Inter';
     position: relative;
     float: left;
@@ -285,21 +285,21 @@ h2, p {
     transition: transform 150ms ease-in;
 }
 
-.Clocks-home-text:hover {
+.theboard-home-text:hover {
     transform: translateX(10px);
 }
 
-.Clocks-straight {
+.theboard-straight {
     transform: rotate(90deg);
     position: relative;
     float: left;
     top: 202px;
-    right: 97px;
+    right: 131px;
     border-left: solid 4px #c6c5c3;
     height: 18px;
 }
 
-.Clocks-spacer-div {
+.theboard-spacer-div {
     position: relative;
     float: left;
     cursor: pointer;

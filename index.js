@@ -11,8 +11,8 @@ function changePage(name) {
         hideAllInfoElements('Tint');
     }
 
-    if (name === 'Clocks-home-text') {
-        hideAllInfoElements('Clocks');
+    if (name === 'theboard-home-text') {
+        hideAllInfoElements('theboard');
     }
 
 }
@@ -31,7 +31,7 @@ function hideAllInfoElements(section) {
     document.getElementById('Tint-panel').style.visibility = 'hidden';
 
     /* Clocks Elements */
-    document.getElementById('Clocks-panel').style.visibility = 'hidden';
+    document.getElementById('theboard-panel').style.visibility = 'hidden';
 
     showSelectedInfoElements(section);
 }
@@ -46,8 +46,8 @@ function showSelectedInfoElements(section) {
         document.getElementById('Tint-panel').style.visibility = 'visible';
     }
 
-    if (section === 'Clocks') {
-        document.getElementById('Clocks-panel').style.visibility = 'visible';
+    if (section === 'theboard') {
+        document.getElementById('theboard-panel').style.visibility = 'visible';
     }
 
 }
@@ -70,8 +70,8 @@ if(window.location.hash) {
     if (hash == 'tint') {
         changePage('Tint-home-text');
     }
-    else if (hash == 'clocks') {
-        changePage('Clocks-home-text');
+    else if (hash == 'theboard') {
+        changePage('theboard-home-text');
     }
     else if (hash == 'home') {
         changePage('profile-panel-text');
