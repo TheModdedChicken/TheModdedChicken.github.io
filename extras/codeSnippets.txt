@@ -1,5 +1,0 @@
-<select name="pageSelect" id="pageSelect" class="pageSelect" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-    <option value="https://themoddedchicken.thedev.id/bagel">Bagel</option>
-    <option value="https://themoddedchicken.thedev.id/">Home</option>
-    <option value="https://themoddedchicken.thedev.id/projects">Projects</option>
-</select>

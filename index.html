@@ -9,6 +9,7 @@
         <meta property="og:url" content="https://themoddedchicken.thedev.id/" />
         <meta property="og:image" content="https://raw.githubusercontent.com/TheModdedChicken/TheModdedChicken.github.io/main/images/TheModdedChicken.png" />
         <meta name="theme-color" content="#eb4034">
+        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/TheModdedChicken/TheModdedChicken.github.io/main/favicon.ico?" />
     </head>
@@ -18,97 +19,8 @@
         <header>
 
         </header>
-        <!-- Side Bar -->
-        <div class="heirarchy">
-            <img class="profile-panel-image" src="https://raw.githubusercontent.com/TheModdedChicken/TheModdedChicken.github.io/main/images/TheModdedChicken.png" alt="TheModdedChicken">
-            <h2 class="profile-panel-text" id="profile-panel-text" onclick="changePage('profile-panel-text');">TheModdedChicken</h1>
-                <div class="heirarchy-clickables" style="position: relative;">
-                    <h3 id="Tint-home-text" class="Tint-home-text" onclick="changePage('Tint-home-text');">Tint</h3>
-                    <div class="Tint-straight">
-                        <div class="lineDegree1"></div>
-                    </div>
-    
-                    <h3 id="theboard-home-text" class="theboard-home-text" onclick="changePage('theboard-home-text');">The Board</h3>
-                    <div class="theboard-straight">
-                        <div class="lineDegree2"></div>
-                    </div>
-                </div>
-        </div>
-
-        <!-- Info Panel -->
-        <div class="info-space">
-    
-            <!-- The Board Info -->
-            <div class="theboard-panel" id="theboard-panel" style="visibility: hidden;">
-
-            </div>
-    
-            <!-- Tint Info -->
-            <div class="Tint-panel" id="Tint-panel" style="position: relative; width: 800px; height: 640px; left: 35px; visibility: hidden;">
-                <a id="Tint-panel-image-a" href="https://github.com/TheModdedChicken/Tint" style="position: relative; right: 400px; top: 30px;">
-                    <img class="Tint-panel-image" id="Tint-panel-image" src="./images/Tint.png">
-                </a>
-                <div class="Tint-panel-download-panel" style="position: relative; bottom: 760px; left: 380px; width: 350px;">
-                    <div class="Tint-x64-download-div" onmouseover="moveTintChangelog('down');" onmouseout="moveTintChangelog('up');">
-                        <form method="get" action="https://github.com/TheModdedChicken/Tint/releases/download/v1.0.1-beta.3/TintSetup.x64.exe">
-                            <Button type="submit" class="Tint-download-button" style="cursor: pointer; outline: none;">
-                                <svg class="Tint-download-button-svg" width="35" height="35" xmlns="http://www.w3.org/2000/svg" style="position: relative; bottom: 6px; right: 14px; border-radius:20px;">
-                                    <line stroke-linecap="round" stroke-linejoin="undefined" id="svg_15" y2="29.81386" x2="25.10989" y1="15.33038" x1="25.32967" fill-opacity="0" stroke-opacity="null" stroke-width="2.5" stroke="#fff" fill="none"/>
-                                    <line stroke="#fff" stroke-linecap="round" stroke-linejoin="undefined" id="svg_16" y2="22.90179" x2="31.70328" y1="29.93474" x1="25.54945" fill-opacity="0" stroke-opacity="null" stroke-width="2.5" fill="none"/>
-                                    <line stroke="#fff" stroke-linecap="round" stroke-linejoin="undefined" id="svg_18" y2="22.90179" x2="18.73628" y1="29.93474" x1="24.67033" fill-opacity="0" stroke-opacity="null" stroke-width="2.5" fill="none"/>
-                                </svg>
-                            </Button>
-                        </form>
-                        <h3 style="position: relative; top: -22px; left: 60px; font-family: 'Inter'; font-weight: 600; font-size: 16px;">TintSetup.x64.exe</h3>
-                        <p style="position: relative; left: 20px; top: -5px; font-size: 12px;"><span style="font-weight: 600;">File Size:</span> 69.69MB</p>
-                        <p style="position: relative; left: 20px; font-size: 12px;"><span style="font-weight: 600;">Architecture:</span> x64</p>
-                        <p style="position: relative; left: 20px; top: 5px; font-size: 12px;"><span style="font-weight: 600;">Platform:</span> Windows</p>
-                    </div>
-        
-                    <div class="Tint-ia32-download-div" onmouseover="moveTintChangelog('down');" onmouseout="moveTintChangelog('up');">
-                        <form method="get" action="https://github.com/TheModdedChicken/Tint/releases/download/v1.0.1-beta.3/TintSetup.ia32.exe">
-                            <Button type="submit" class="Tint-download-button" style="cursor: pointer; outline: none;">
-                                <svg class="Tint-download-button-svg" width="35" height="35" xmlns="http://www.w3.org/2000/svg" style="position: relative; bottom: 6px; right: 14px; border-radius:20px;">
-                                    <line stroke-linecap="round" stroke-linejoin="undefined" id="svg_15" y2="29.81386" x2="25.10989" y1="15.33038" x1="25.32967" fill-opacity="0" stroke-opacity="null" stroke-width="2.5" stroke="#fff" fill="none"/>
-                                    <line stroke="#fff" stroke-linecap="round" stroke-linejoin="undefined" id="svg_16" y2="22.90179" x2="31.70328" y1="29.93474" x1="25.54945" fill-opacity="0" stroke-opacity="null" stroke-width="2.5" fill="none"/>
-                                    <line stroke="#fff" stroke-linecap="round" stroke-linejoin="undefined" id="svg_18" y2="22.90179" x2="18.73628" y1="29.93474" x1="24.67033" fill-opacity="0" stroke-opacity="null" stroke-width="2.5" fill="none"/>
-                                </svg>
-                            </Button>
-                        </form>
-                        <h3 style="position: relative; top: -22px; left: 60px; font-family: 'Inter'; font-weight: 600; font-size: 16px;">TintSetup.ia32.exe</h3>
-                        <p style="position: relative; left: 20px; top: -5px; font-size: 12px;"><span style="font-weight: 600;">File Size:</span> 67.11MB</p>
-                        <p style="position: relative; left: 20px; font-size: 12px;"><span style="font-weight: 600;">Architecture:</span> ia32</p>
-                        <p style="position: relative; left: 20px; top: 5px; font-size: 12px;"><span style="font-weight: 600;">Platform:</span> Windows</p>
-                    </div>
-        
-                    <div class="Tint-arm64-download-div" onmouseover="moveTintChangelog('down');" onmouseout="moveTintChangelog('up');">
-                        <form method="get" action="https://github.com/TheModdedChicken/Tint/releases/download/v1.0.1-beta.3/TintSetup.arm64.exe">
-                            <Button type="submit" class="Tint-download-button" style="cursor: pointer; outline: none; border-radius:20px;">
-                                <svg class="Tint-download-button-svg" width="35" height="35" xmlns="http://www.w3.org/2000/svg" style="position: relative; bottom: 6px; right: 14px; border-radius:20px;">
-                                    <line stroke-linecap="round" stroke-linejoin="undefined" id="svg_15" y2="29.81386" x2="25.10989" y1="15.33038" x1="25.32967" fill-opacity="0" stroke-opacity="null" stroke-width="2.5" stroke="#fff" fill="none"/>
-                                    <line stroke="#fff" stroke-linecap="round" stroke-linejoin="undefined" id="svg_16" y2="22.90179" x2="31.70328" y1="29.93474" x1="25.54945" fill-opacity="0" stroke-opacity="null" stroke-width="2.5" fill="none"/>
-                                    <line stroke="#fff" stroke-linecap="round" stroke-linejoin="undefined" id="svg_18" y2="22.90179" x2="18.73628" y1="29.93474" x1="24.67033" fill-opacity="0" stroke-opacity="null" stroke-width="2.5" fill="none"/>
-                                </svg>
-                            </Button>
-                        </form>
-                        <h3 style="position: relative; top: -22px; left: 60px; font-family: 'Inter'; font-weight: 600; font-size: 16px;">TintSetup.arm64.exe</h3>
-                        <p style="position: relative; left: 20px; top: -5px; font-size: 12px;"><span style="font-weight: 600;">File Size:</span> 69.9MB</p>
-                        <p style="position: relative; left: 20px; font-size: 12px;"><span style="font-weight: 600;">Architecture:</span> arm64</p>
-                        <p style="position: relative; left: 20px; top: 5px; font-size: 12px;"><span style="font-weight: 600;">Platform:</span> Windows</p>
-                    </div>
-    
-                    <div class="Tint-panel-changelog-panel" id="Tint-panel-changelog-panel">
-                        <h3 style="position: relative; top: 20px; font-family: 'Inter'; font-weight: 500; font-size: 20px;">Changelog | v1.0.1-beta 3</h3>
-                        <p style="position: relative; top: 45px; font-size: 14px;">
-                            - Added button animations<br><br>
-                            - Added Minimize to tray action button<br><br>
-                            - Added default Windows action icons<br><br>
-                            - Changed profile menu styling<br><br>
-
-                            - Fixed profiles not working (again)</p>
-                    </div>
-                </div>
-            </div>
+        <div id="main_content">
+            Website Under <a href="https://open.spotify.com/track/4Q3OgsT66RNNVvxBmf1p4W?si=78a9b4c0cc6a43a7">Construxion</a> :/
         </div>
     </body>
 </html>
